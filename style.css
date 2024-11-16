@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+}
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group button {
+  width: 98%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group button {
+  background: #25d366;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-group button:hover {
+  background: #20b957;
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Added a bit more space between checkboxes */
+  padding: 5px;
+}
+
+.checkbox-group label {
+  width: calc(40% - 5px); /* 2-column layout */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Allow long words to break into the next line */
+  padding-right: 5px; /* Aligns the text with checkboxes */
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px; /* Adds some space between checkbox and label */
+  transform: scale(1.5);
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 600px) {
+  .checkbox-group label {
+    width: 100%; /* Full width on small screens */
+  }
+}
