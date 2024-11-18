@@ -58,6 +58,37 @@ body {
   background: #20b957;
 }
 
+.form-group2 {
+  margin-bottom: 15px;
+}
+
+.form-group2 label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group2 input,
+.form-group2 select,
+.form-group2 button {
+  width: 93%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group2 button {
+  background: #25d366;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-group2 button:hover {
+  background: #20b957;
+}
+
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +101,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   word-wrap: break-word; /* Allow long words to break into the next line */
   padding-right: 5px; /* Aligns the text with checkboxes */
 }
@@ -83,6 +114,6 @@ body {
 /* Make the layout responsive for smaller screens */
 @media (max-width: 600px) {
   .checkbox-group label {
-    width: 80%; /* Full width on small screens */
+    width: 100%; /* Full width on small screens */
   }
 }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Session Details</title>
+    <title>CDEC - Trainer Batch Update</title>
   </head>
   <body>
     <div class="form-container">
-      <h2>Session Details</h2>
+      <h2>CDEC - Trainer Batch Update</h2>
       <form id="dataForm">
         <div class="form-group">
           <label for="date">📅 Date</label>
@@ -34,7 +34,7 @@
             required
           />
         </div>
-        <div class="form-group">
+        <div class="form-group2">
           <label for="batchMode">🔀 Batch Mode</label>
           <select id="batchMode" name="batchMode" required>
             <option value="Online">Online</option>
@@ -42,7 +42,7 @@
             <option value="Hybrid">Hybrid</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group2">
           <label for="topic">📂 Select Topic</label>
           <select id="topic" name="topic" required>
             <option value="">--Select Topic--</option>
@@ -51,17 +51,17 @@
             <option value="DevOps">DevOps</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group2">
           <label for="mainTopic">📝 Main Topic</label>
           <select id="mainTopic" name="mainTopic" required>
             <option value="">--Select Main Topic--</option>
           </select>
         </div>
         <div class="">
-          <label>📋 Subtopics</label>
+          <label> <b>📋 Subtopics</b></label>
           <div id="subtopicCheckboxGroup" class="checkbox-group"></div>
         </div>
-        <div class="form-group">
+        <div class="form-group2">
           <button type="button" id="whatsappShare">Share on WhatsApp</button>
         </div>
       </form>
