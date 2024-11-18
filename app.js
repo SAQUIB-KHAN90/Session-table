@@ -557,6 +557,7 @@ document.getElementById("whatsappShare").addEventListener("click", function () {
 - Trainer Name: ${formData.get("trainerName")}
 - Batch Name: ${formData.get("batchName")}
 - Batch Mode: ${formData.get("batchMode")}
+- Attendance: ${formData.get("attendance")}
 - Topic: ${formData.get("topic")}
 - Main Topic: ${formData.get("mainTopic")}
 - Subtopics:
