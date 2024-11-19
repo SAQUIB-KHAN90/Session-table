@@ -1,12 +1,12 @@
 const topics = {
   Linux: {
-    "Day 1 : 	Embarking on the DevOps Journey	": [
+    "Day 1 :Embarking on the DevOps Journey	": [
       "Introduction to DevOps",
       "How IT Company Works",
       "What is an Application?",
       "Developers vs Testers vs DevOps",
     ],
-    "Day 2 : 	The Strategic Imperative of DevOps	 ": [
+    "Day 2 :The Strategic Imperative of DevOps	 ": [
       "Top Features of Linux",
       "Linux Everywhere",
       "Unlocking Linux Careers",
@@ -23,7 +23,7 @@ const topics = {
       "The Future of DevOps Careers",
       "Goal to Achieve in CDEC",
     ],
-    "Day 3 : Navigating the Linux Landscape	  ": [
+    "Day 3 :Navigating the Linux Landscape	  ": [
       "Getting Started with Operating Systems",
       "Different Types of Operating Systems",
       "How Operating Systems Impact Your Daily Life",
@@ -37,7 +37,7 @@ const topics = {
       "Introduction to Linux",
       "Architecture of Linux",
     ],
-    "Day 4 : Mastering the Linux Prompt	 ": [
+    "Day 4 :Mastering the Linux Prompt	 ": [
       "Understanding the Linux Command Prompt",
       "Decoding the Structure of the Command Prompt",
       "Effective Command Prompt Usage: A Step-by-Step Guide",
@@ -46,20 +46,20 @@ const topics = {
       "Getting Started with the Linux Terminal",
       "Essential System Information: Commands and Tools for Linux",
     ],
-    "Day 5 : Delving Deep into the Linux File System": [
+    "Day 5 :Delving Deep into the Linux File System": [
       "Navigating the File System",
       "File and Directory Management",
       "Viewing and Editing Files",
       "Copy, Move, and Delete Files",
     ],
-    "Day 6 : Delving Deep into the Linux File System ": [
+    "Day 6 :Delving Deep into the Linux File System ": [
       "Mastering the Linux File System Hierarchy",
       "The Significance of the Linux File System Hierarchy",
       "Inside the Linux Root Directory: What You Need to Know",
       "Understanding the Functionality of Common Linux Directories",
       "Introduction to Linux Shortcuts: Boost Your Efficiency",
     ],
-    "Day 7 : Mastering Text Editing with VIM": [
+    "Day 7 :Mastering Text Editing with VIM": [
       "Overview of Vim and its History",
       "Basic Concepts: Modes in Vim (Command, Insert, Visual, Execute)",
       "Basic Navigation in Command Mode",
@@ -77,7 +77,7 @@ const topics = {
       "Manipulating Text in Visual Mode",
       "Revisioning the complete vim editor",
     ],
-    "Day 9 : Managing Users and Permissions in Linux": [
+    "Day 9 :Managing Users and Permissions in Linux": [
       "Overview of User and Permission Management",
       "Types of Users",
       "Using useradd Command",
@@ -193,38 +193,38 @@ const topics = {
       "Cloud Models (IAAS, PAAS, SAAS)",
       "AWS Account Creation",
     ],
-    "Day 2 : Getting Started with AWS and EC2 Instances	": [
+    "Day 2 :Getting Started with AWS and EC2 Instances	": [
       "Introduction to AWS Dashboard",
       "Region vs Availability Zone (AZ)",
       "Introduction to EC2 Service",
       "Create First Instance of Ubuntu",
     ],
-    "Day 3 : Getting Started with AWS and EC2 Instances	": [
+    "Day 3 :Getting Started with AWS and EC2 Instances	": [
       "Security Group (SSH and RDP Port)",
       "Create Instance of Windows",
       "Remote Access of Linux and Windows Machines",
     ],
-    "Day 4 : Linux Essentials and Web Server Deployment": [
+    "Day 4 :Linux Essentials and Web Server Deployment": [
       "SSH Service (Key-based Authentication)",
       "Practical: Create Another Login User",
       "Deploy Web Server Using NGINX",
     ],
-    "Day 5 : Exploring the EC2 Dashboard and Advanced Features": [
+    "Day 5 :Exploring the EC2 Dashboard and Advanced Features": [
       "Explain Complete Dashboard of EC2",
       "Instance Types",
       "Status Check, AMI (Types, Create, and Copy)",
       "Launch Template, Purchasing Options",
     ],
-    "Day 6 : EBS Volume Management and Backup Strategies	": [
+    "Day 6 :EBS Volume Management and Backup Strategies	": [
       "EBS Volumes and Its Types",
       "Attach Volumes, Create Partition, and Mount",
     ],
-    "Day 7 : EBS Volume Management and Backup Strategies	": [
+    "Day 7 :EBS Volume Management and Backup Strategies	": [
       "Partitions / Permanent Mount",
       "Take Backup Using Snapshot",
       "Automate Snapshot Using Snapshot Policy",
     ],
-    "Day 8 : Network File Systems in AWS": [
+    "Day 8 :Network File Systems in AWS": [
       "Introduction to NFS",
       "Create EFS File System",
       "Attach and Mount EFS File System",
@@ -233,28 +233,28 @@ const topics = {
       "Basics of Networking",
       "CIDR (Classless Inter-Domain Routing)",
     ],
-    "Day 10: Virtual Private Cloud (VPC) Configuration	": [
+    "Day 10:Virtual Private Cloud (VPC) Configuration	": [
       "Introduction to VPC",
       "CIDR Calculation for Subnets",
       "Create VPC and Subnet",
     ],
-    "Day 11 : Virtual Private Cloud (VPC) Configuration	": [
+    "Day 11 :Virtual Private Cloud (VPC) Configuration	": [
       "Create IGW and Route",
       "Launch Private and Public Instance",
       "NAT Gateway",
       "VPC Peering",
     ],
-    "Day 12 : Network Interface and Security Enhancements": [
+    "Day 12 :Network Interface and Security Enhancements": [
       "NIC and Elastic IP",
       "Placement Groups",
       "NACL vs Security Group",
     ],
-    "Day 13: Load Balancing in AWS	": [
+    "Day 13:Load Balancing in AWS	": [
       "Introduction to Load Balancer",
       "Load Balancer and Its Types",
       "Difference: Application Load Balancer & Network Load Balancer",
     ],
-    "Day 14 : Load Balancing in AWS": ["Create Application Load Balancer"],
+    "Day 14 :Load Balancing in AWS": ["Create Application Load Balancer"],
     "Day 15:Auto Scaling for High Availability	": [
       "Auto Scaling and Its Types",
       "Create Launch Template",
@@ -345,7 +345,7 @@ const topics = {
     "Day 33:EXAM(ONLY SATURDAY)": ["EXAM (ONLY SATURDAY)"],
   },
   DevOps: {
-    "Day 1: Introduction to DevOps": [
+    "Day 1:Introduction to DevOps": [
       "Introduction Software Industry",
       "SDLC - Waterfall and Agile Model",
       "Explain DevOps Syllabus",
@@ -353,7 +353,7 @@ const topics = {
       "What is Frontend vs backend",
       "Stages of application development [developer/tester/db/devops teams]",
     ],
-    "Day 2: Source Code Management Tool (GIT)": [
+    "Day 2:Source Code Management Tool (GIT)": [
       "Introduction to SCM tool",
       "Difference Between Centralise-VCS and Distributed-VCS",
       "Introduction to GIT",
@@ -362,27 +362,27 @@ const topics = {
       "GIT Command (work on local-repo)",
       "git init, add, commit, logs, revert, restore, status",
     ],
-    "Day 3: Source Code Management Tool (GIT)": [
+    "Day 3:Source Code Management Tool (GIT)": [
       "git branch, common types of branches, checkout, diff, merge",
       "Introduction to Remote Repo (GitHub)",
       "git clone, pull, push commands",
       "git init, config, remote",
     ],
-    "Day 4: Collaborate in project using GITHUB": [
+    "Day 4:Collaborate in project using GITHUB": [
       "GITHUB DASHBOARD",
       "Difference between Public and Private Repo",
       "How to Search Public Repos",
       "Fork and Pull Requests",
       "Authentication methods (HTTP, SSH)",
     ],
-    "Day 5: Collaborate in project using GITHUB": [
+    "Day 5:Collaborate in project using GITHUB": [
       "Difference between Github and Gitlab",
       "Difference between CE and EE Gitlab",
       "How to merge repo branches in gitlab",
       "How to resolve conflicts",
       "Explain IDE, install visual studio code, Auto Git",
     ],
-    "Day 6: Containerisation using Docker": [
+    "Day 6:Containerisation using Docker": [
       "Difference between Monolithic and MicroServices",
       "Difference between Traditional, Virtualization, and Containerization Deployment",
       "Introduction to Containerization, Container, Image",
@@ -391,7 +391,7 @@ const topics = {
       "Install Docker engine",
       "Run first container",
     ],
-    "Day 7: Containerisation using Docker": [
+    "Day 7:Containerisation using Docker": [
       "Explain docker container commands",
       "Essential Commands for Container Management using Docker",
       "Experiment with Docker Containers - Create, Start, Stop, and Run",
@@ -399,102 +399,102 @@ const topics = {
       "Interact with Containers using 'exec'",
       "Inspects and Troubleshooting Steps in Docker",
     ],
-    "Day 8: Containerisation using Docker": [
+    "Day 8:Containerisation using Docker": [
       "Introduction to docker images and its naming",
       "Introduction to Dockerhub and ECR",
       "docker image commands",
       "docker pull, login, push",
       "docker commit, tag, image rm, rmi, save, load, prune",
     ],
-    "Day 9: Containerisation using Docker": [
+    "Day 9:Containerisation using Docker": [
       "Introduction to Docker Network",
       "Explain different network drivers",
       "docker network commands",
     ],
-    "Day 10: Containerisation using Docker": [
+    "Day 10:Containerisation using Docker": [
       "Introduction to Docker Volume",
       "docker volume commands",
     ],
-    "Day 11: Containerisation using Docker": [
+    "Day 11:Containerisation using Docker": [
       "Introduction to Dockerfile",
       "FROM, LABEL, RUN, CMD, ENTRYPOINT, ENV, ARG, COPY, ADD, EXPOSE, USER, WORKDIR",
       "Docker build, push, pull",
     ],
-    "Day 12: Containerisation using Docker": [
+    "Day 12:Containerisation using Docker": [
       "Create docker file for frontend and backend application",
       "Deploy three-tier application deployment example",
     ],
-    "Day 13: Briefing of Docker Compose": [
+    "Day 13:Briefing of Docker Compose": [
       "Brief Introduction to Docker Compose",
       "Deploy three-tier application using Docker Compose",
     ],
-    "Day 15: Orchestration tool (Kubernetes)": [
+    "Day 15:Orchestration tool (Kubernetes)": [
       "Introduction to Kubernetes",
       "Why we need orchestration tool",
       "Architecture of Kubernetes",
       "Lifecycle of the pods",
       "Enlist Cluster creation methods (minikube, kind, kubeadm, EKS, GKE, AKS, etc)",
     ],
-    "Day 16: Orchestration tool (Kubernetes)": [
+    "Day 16:Orchestration tool (Kubernetes)": [
       "Create cluster using EKS",
       "Install kubectl, access EKS cluster",
       "Introduction to Pods, and service",
     ],
-    "Day 17: Orchestration tool (Kubernetes)": [
+    "Day 17:Orchestration tool (Kubernetes)": [
       "Kubernetes network (intra-pod and inter-pod communication) with examples",
       "Pod IP, Container Port, Node IP, Node Port, Load balancer",
     ],
-    "Day 18: Orchestration tool (Kubernetes)": [
+    "Day 18:Orchestration tool (Kubernetes)": [
       "Introduction to YAML scripts",
       "Write manifest files for Pods and Services",
       "Concept of Namespace, ReplicationController, ReplicaSet",
     ],
-    "Day 24: Code Infrastructure with Terraform": [
+    "Day 24:Code Infrastructure with Terraform": [
       "Introduction to IAC",
       "Why we need IAC",
       "Introduction to Terraform",
       "Terraform Language (Basic Syntax)",
     ],
-    "Day 25: Code Infrastructure with Terraform": [
+    "Day 25:Code Infrastructure with Terraform": [
       "Install Terraform in Linux system",
       "Write first Terraform script to deploy EC2 instance",
       "Explain Terraform lifecycle",
     ],
-    "Day 33: Jenkins Essentials": [
+    "Day 33:Jenkins Essentials": [
       "Introduction to CI process",
       "Difference between Continuous Delivery and Deployment",
       "Introduction to Jenkins",
       "Install Jenkins server",
     ],
-    "Day 34: Jenkins Essentials": [
+    "Day 34:Jenkins Essentials": [
       "Create first freestyle job",
       "Install GIT plugin",
       "Create freestyle job to pull the source code",
     ],
-    "Day 35: Jenkins Essentials": [
+    "Day 35:Jenkins Essentials": [
       "Install SSH Build Agent Plugin",
       "Create and add SSH agents to Master Jenkins",
       "Explain JOB Configuration, Parameterize Jobs",
     ],
-    "Day 37: Build Tool Maven": [
+    "Day 37:Build Tool Maven": [
       "Install Maven",
       "Show creating Maven Project",
       "Explain Maven Dir Hierarchy, pom.xml file",
     ],
-    "Day 39: Check Quality of Code (Sonarqube)": [
+    "Day 39:Check Quality of Code (Sonarqube)": [
       "Explain Sonarqube",
       "Create Sonarqube server",
       "Scan Project using Maven",
     ],
-    "Day 45: Monitoring Tool (Datadog)": [
+    "Day 45:Monitoring Tool (Datadog)": [
       "Introduction to Datadog",
       "Installing the Datadog Agent on Linux, Docker",
       "Introduction to Infrastructure Monitoring",
     ],
-    "Day 49: Revision Session (ONLY SATURDAY)": [
+    "Day 49:Revision Session (ONLY SATURDAY)": [
       "Comprehensive Q&A to cover remaining doubts",
     ],
-    "Day 50: EXAM (ONLY SATURDAY)": ["Final Exam"],
+    "Day 50:EXAM (ONLY SATURDAY)": ["Final Exam"],
   },
 };
 
@@ -560,8 +560,7 @@ document.getElementById("whatsappShare").addEventListener("click", function () {
 - Attendance: ${formData.get("attendance")}
 - Topic: ${formData.get("topic")}
 - Main Topic: ${formData.get("mainTopic")}
-- Subtopics:
-${selectedSubtopics}
+- Subtopics:${selectedSubtopics}
     `.trim();
 
   const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(yamlMessage)}`;
