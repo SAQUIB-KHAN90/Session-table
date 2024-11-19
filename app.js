@@ -322,7 +322,7 @@ const topics = {
       "Introduction to Route53",
       "Purchase Domain",
     ],
-    "Day 28:NS and Route 53 for Domain Management	": [
+    "Day 28:DNS and Route 53 for Domain Management	": [
       "Create Hosted Zone and Simple A Record to Map Instance IP",
       "Routing Policy",
     ],
@@ -382,6 +382,9 @@ const topics = {
       "How to resolve conflicts",
       "Explain IDE, install visual studio code, Auto Git",
     ],
+    "Revision Session(ONLY SATURDAY) ": [
+      "Recap of all key concepts of GIT, GITHUB, GITLAB",
+    ],
     "Day 6:Containerisation using Docker": [
       "Difference between Monolithic and MicroServices",
       "Difference between Traditional, Virtualization, and Containerization Deployment",
@@ -398,6 +401,7 @@ const topics = {
       "Expose applications to the World",
       "Interact with Containers using 'exec'",
       "Inspects and Troubleshooting Steps in Docker",
+      "docker run (-d, -p, -P, -e, --name), create, start, stop, rm, ps (-aq), exec (-it), inspect, cp, logs, stats",
     ],
     "Day 8:Containerisation using Docker": [
       "Introduction to docker images and its naming",
@@ -410,10 +414,12 @@ const topics = {
       "Introduction to Docker Network",
       "Explain different network drivers",
       "docker network commands",
+      "create, delete, run (--network)",
     ],
     "Day 10:Containerisation using Docker": [
       "Introduction to Docker Volume",
       "docker volume commands",
+      "Create, delete, run (-v)",
     ],
     "Day 11:Containerisation using Docker": [
       "Introduction to Dockerfile",
@@ -428,10 +434,14 @@ const topics = {
       "Brief Introduction to Docker Compose",
       "Deploy three-tier application using Docker Compose",
     ],
+    "Day 14 : Revision Session(ONLY SATURDAY)": [
+      "Recap of all key concepts of Docker",
+    ],
     "Day 15:Orchestration tool (Kubernetes)": [
       "Introduction to Kubernetes",
       "Why we need orchestration tool",
       "Architecture of Kubernetes",
+      "Why kubernetes",
       "Lifecycle of the pods",
       "Enlist Cluster creation methods (minikube, kind, kubeadm, EKS, GKE, AKS, etc)",
     ],
@@ -439,6 +449,9 @@ const topics = {
       "Create cluster using EKS",
       "Install kubectl, access EKS cluster",
       "Introduction to Pods, and service",
+      "Main Container and Side Car Containers",
+      "Run first Pod by kubectl run",
+      "Expose pod using kubectl expose",
     ],
     "Day 17:Orchestration tool (Kubernetes)": [
       "Kubernetes network (intra-pod and inter-pod communication) with examples",
@@ -449,52 +462,166 @@ const topics = {
       "Write manifest files for Pods and Services",
       "Concept of Namespace, ReplicationController, ReplicaSet",
     ],
-    "Day 24:Code Infrastructure with Terraform": [
+    "Day 19:Orchestration tool (Kubernetes)": [
+      "Deployments vs StatefulSet",
+      "Write Manifests for Deployments and StatefulSet",
+      "Explain DaemonSet",
+    ],
+    "Day 20: Orchestration tool (Kubernetes)": [
+      "Store variables using ConfigMap and Secrets",
+      "Achieve Persistent Storage using PV and PVC, Dynamic Volume using EBS",
+    ],
+    "Day 21: Orchestration tool (Kubernetes)": [
+      "Types of AutoScaling in k8s",
+      "Write Manifests for HPA",
+    ],
+    "Day 22: Orchestration tool (Kubernetes)": [
+      "Introduction to Ingress",
+      "Install Nginx Ingress Controller using Manifests",
+      "Write Manifest for Ingress (Path-based routing and Name-based routing)",
+    ],
+    "Day 23: Orchestration tool (Kubernetes)": [
+      "Write manifests to deploy three-tier application: HPA, Deployment, Service, Ingress",
+    ],
+    "Revision Session (ONLY SATURDAY)": [
+      "Recap of all key concepts of Kubernetes",
+    ],
+    "Half Syllabus Exam (ONLY SATURDAY)": [],
+    "Day 24: Code Infrastructure with Terraform": [
       "Introduction to IAC",
-      "Why we need IAC",
+      "Why we need IAC (Difference between Shell Script, Ansible, and IAC tool)",
       "Introduction to Terraform",
       "Terraform Language (Basic Syntax)",
+      "Enlist the Blocks used in Terraform Language",
     ],
-    "Day 25:Code Infrastructure with Terraform": [
+    "Day 25: Code Infrastructure with Terraform": [
       "Install Terraform in Linux system",
       "Write first Terraform script to deploy EC2 instance",
       "Explain Terraform lifecycle",
+      "Explain different files that are created in Terraform lifecycle",
     ],
-    "Day 33:Jenkins Essentials": [
+    "Day 26: Code Infrastructure with Terraform": [
+      "Write Terraform script to deploy Security Group",
+      "Explain HEREDOC concept in UserData",
+      "Explain (Provider, Resource, Variable, Data, Output) blocks in the above example",
+    ],
+    "Day 27: Code Infrastructure with Terraform": [
+      "Write a Terraform script to deploy LoadBalancer and Autoscaling",
+    ],
+    "Day 28: Code Infrastructure with Terraform": [
+      "Explain module concept",
+      "Write module for VPC, Subnet, and EC2 instance",
+      "Explain types of dependencies",
+      "Explain Blocks (terraform, module, output)",
+    ],
+    "Day 29: Code Infrastructure with Terraform": [
+      "Storing tfstate file on remote location",
+      "Create multi-environment script using .tfvar file",
+    ],
+    "Day 30: Code Infrastructure with Terraform": [
+      "Explain concept of terraform workspace (Theory)",
+      "Explain Loops (count, for-each, for)",
+    ],
+    "Day 31: Code Infrastructure with Terraform": [
+      "Terraform Commands (Taint, Import, Destroy -t)",
+      "Terraform Provisioners (remote, local, file)",
+    ],
+    "Day 32: Code Infrastructure with Terraform": [
+      "Write a Terraform script to deploy EKS cluster",
+    ],
+    "Terraform Revision (ONLY SATURDAY)": [],
+    "Day 33: Jenkins Essentials": [
       "Introduction to CI process",
       "Difference between Continuous Delivery and Deployment",
       "Introduction to Jenkins",
       "Install Jenkins server",
     ],
-    "Day 34:Jenkins Essentials": [
+    "Day 34: Jenkins Essentials": [
       "Create first freestyle job",
       "Install GIT plugin",
       "Create freestyle job to pull the source code",
     ],
-    "Day 35:Jenkins Essentials": [
+    "Day 35: Jenkins Essentials": [
       "Install SSH Build Agent Plugin",
-      "Create and add SSH agents to Master Jenkins",
+      "Create and attach SSH agents to Master Jenkins",
       "Explain JOB Configuration, Parameterize Jobs",
     ],
-    "Day 37:Build Tool Maven": [
+    "Day 36: Jenkins Pipeline": [
+      "Install Pipeline plugin",
+      "Scripted Pipeline vs Declarative Pipeline",
+      "Write a basic 4-stage pipeline",
+      "Add Pull stage",
+    ],
+    "Day 37: Build Tool Maven": [
       "Install Maven",
       "Show creating Maven Project",
       "Explain Maven Dir Hierarchy, pom.xml file",
+      "Explain Maven Phases",
+      "Maven Clean Package to build .war artifact",
     ],
-    "Day 39:Check Quality of Code (Sonarqube)": [
+    "Day 38: Build Tool Maven": [
+      "Integrate Maven in Jenkins",
+      "Add Build Stage to Maven",
+    ],
+    "Day 39: Check Quality of Code (Sonarqube)": [
       "Explain Sonarqube",
+      "Explain QA Result (bugs, vulnerabilities, code smell, etc)",
       "Create Sonarqube server",
       "Scan Project using Maven",
+      "Create Quality Gate to explain code QA Failure",
     ],
-    "Day 45:Monitoring Tool (Datadog)": [
+    "Day 40: Check Quality of Code (Sonarqube)": [
+      "Integrate Sonarqube with Jenkins",
+      "Add Test stage",
+      "Create webhook with Sonarqube for Quality Gate wait",
+    ],
+    "Day 41: Jenkins Pipeline": [
+      "Store artifact (.war) to S3",
+      "Add Deploy stage",
+    ],
+    "Day 42: Jenkins Pipeline": [
+      "Create Infrastructure Pipeline with Pull, Test (tf plan), Deploy (tf apply) stage",
+      "Create above pipeline to deploy EKS cluster",
+    ],
+    "Day 43: Jenkins Pipeline": [
+      "Deploy three-tier application using pipeline on EKS",
+    ],
+    "Day 44:Revision Session (ONLY SATURDAY)": [
+      "Recap of all key concepts covered Jenkins, Maven, Sonarqube",
+    ],
+    "Day 45: Monitoring Tool (Datadog)": [
       "Introduction to Datadog",
       "Installing the Datadog Agent on Linux, Docker",
+      "Introduction to the Datadog UI",
       "Introduction to Infrastructure Monitoring",
+      "Monitoring Hosts",
+      "Monitoring Docker and Kubernetes",
     ],
-    "Day 49:Revision Session (ONLY SATURDAY)": [
-      "Comprehensive Q&A to cover remaining doubts",
+    "Day 46: Monitoring Tool (Datadog)": [
+      "Setting up Datadog agent on Kubernetes",
+      "Host Maps and Container Maps",
+      "Basic Integrations with AWS",
+      "Understanding metrics in Datadog",
+      "Types of metrics (gauge, counter, histogram)",
+      "Collecting and visualizing metrics",
     ],
-    "Day 50:EXAM (ONLY SATURDAY)": ["Final Exam"],
+    "Day 47: Monitoring Tool (Datadog)": [
+      "Custom Metrics in DataDog",
+      "Sending custom metrics to Datadog",
+      "Building basic dashboards for metrics",
+      "Creating custom dashboards",
+      "Timeboards and Screenboards",
+    ],
+    "Day 48: Monitoring Tool (Datadog)": [
+      "Introduction to Log Management",
+      "Collecting logs with the Datadog agent",
+      "Introduction to alerting in Datadog",
+      "Creating monitors and alerts",
+    ],
+    "Day 49: Revision Session (ONLY SATURDAY)": [
+      "Comprehensive Q&A to cover remaining doubts and final concepts review",
+    ],
+    "Day 50: Exam (ONLY SATURDAY)": ["EXAM"],
   },
 };
 
