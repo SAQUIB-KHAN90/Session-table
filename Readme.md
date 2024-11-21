@@ -1,83 +1,65 @@
-# MariaDB Setup and Configuration Guide
+# React Project Setup and Deployment Guide
 
-This guide explains how to set up MariaDB, create a database, and import data from a SQL file. It also covers deployment on Amazon EC2.
+This guide provides step-by-step instructions for setting up a React project locally and deploying it on an AWS EC2 instance.
 
-## 1. Installing MariaDB
+## 1. Setting Up the React Project Locally
 
-Download and install MariaDB:
+Install Node.js and npm:
 
 ```bash
+
 sudo apt update
-sudo apt install mariadb-server
-```
-
-Start MariaDB service:
-
-```bash
-sudo systemctl start mariadb
-sudo systemctl enable mariadb
-```
-
-## 2. Securing MariaDB
-
-Run the security script to configure basic security:
-
-```bash
-sudo mysql_secure_installation
-```
-
-Follow the instructions to:
-
-Set a root password.
-Remove unnecessary users and databases.
-Disable remote root login.
-
-## 3. Setting Up the Database
-
-Log in to MariaDB:
-
-```bash
-sudo mysql -u root -p
-```
-
-Create a new database and user:
-
-```sql
-CREATE DATABASE springbackend;
-GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
+sudo apt install nodejs npm -y
 
 ```
 
-Exit MariaDB:
+Verify installation:
 
 ```bash
 
-EXIT;
+node -v
+npm -v
 
 ```
 
-## 4. Importing the Database
+Create a React Application
 
-Import the SQL file into the database:
-
-```bash
-sudo mysql -u username -p springbackend < springbackend.sql
-
-```
-
-Verify the database import:
+Use npx to create a React app:
 
 ```bash
 
-sudo mysql -u username -p
+npx create-react-app react-frontend
 
 ```
 
-Run the following commands:
+Navigate to the project directory:
 
 ```bash
-SHOW DATABASES;
-USE springbackend;
-SHOW TABLES;
-SELECT * FROM tbl_workers;
+cd react-frontend
+
 ```
+
+Run the React Application Locally
+
+Install dependencies:
+
+```bash
+npm install
+
+```
+
+Start the development server:
+
+```bash
+npm start
+
+```
+
+Build the React Application
+
+```bash
+npm run build
+
+```
+
+The production-ready files will be available in the build/ directory.
