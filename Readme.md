@@ -1,65 +1,93 @@
-# React Project Setup and Deployment Guide
+# Spring Boot Backend Deployment Guide
 
-This guide provides step-by-step instructions for setting up a React project locally and deploying it on an AWS EC2 instance.
+## Part 1: Deploying Locally
 
-## 1. Setting Up the React Project Locally
+Prerequisites :
+Java Development Kit (JDK 8 or higher) installed.
+Maven installed.
+Spring Boot application source code or JAR file.
 
-Install Node.js and npm:
+Step 1: Install Java
+
+Verify if Java is installed:
+
+```bash
+
+java -version
+
+```
+
+If Java is not installed, download and install the JDK from Oracle or use a package manager:
 
 ```bash
 
 sudo apt update
-sudo apt install nodejs npm -y
-
+sudo apt install openjdk-11-jdk -y
 ```
 
 Verify installation:
 
 ```bash
-
-node -v
-npm -v
+java -version
 
 ```
 
-Create a React Application
+Step 2: Install Maven
 
-Use npx to create a React app:
+Verify if Maven is installed:
+
+```bash
+mvn -version
+
+```
+
+If not installed, use the following command:
+
+```bash
+sudo apt install maven -y
+
+```
+
+Step 3: Build the Spring Boot Application
+
+Navigate to your Spring Boot project directory:
 
 ```bash
 
-npx create-react-app react-frontend
-
+cd /path/to/your/project
 ```
 
-Navigate to the project directory:
+Build the project:
 
 ```bash
-cd react-frontend
+mvn clean package -Dmaven.test.skip=true
 
 ```
 
-Run the React Application Locally
+After a successful build, the JAR file will be located in the target/ directory (e.g., target/spring-backend-v1.jar).
 
-Install dependencies:
+Step 4: Run the Application
+
+Run the JAR file:
 
 ```bash
-npm install
+
+java -jar target/spring-backend-v1.jar
 
 ```
 
-Start the development server:
+The application will start, and you can access it at:
+
+arduino
+
+http://localhost:8080
+
+Step 5: Keep the Application Running
+
+If you want to keep the application running in the background:
 
 ```bash
-npm start
+
+nohup java -jar target/spring-backend-v1.jar &
 
 ```
-
-Build the React Application
-
-```bash
-npm run build
-
-```
-
-The production-ready files will be available in the build/ directory.
