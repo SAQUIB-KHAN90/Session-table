@@ -5,10 +5,15 @@ This guide explains how to set up MariaDB, create a database, and import data fr
 ## 1. Installing MariaDB
 
 Download and Install MariaDB
+
 Visit the MariaDB download page.
+
 Select the appropriate version for Windows and download the installer.
+
 Run the installer and follow the prompts. Choose the default options unless you need custom configurations.
+
 Start MariaDB Service
+
 After installation, the MariaDB service should be running automatically. To verify, follow these steps:
 
 Open the Command Prompt as an Administrator.
@@ -75,8 +80,9 @@ To import an SQL file into your new database, use the following command: Open Co
 ```bash
 
 mysql -u username -p springbackend < C:\path\to\springbackend.sql
-Replace C:\path\to\springbackend.sql with the actual path to your SQL file.
 ```
+
+Replace C:\path\to\springbackend.sql with the actual path to your SQL file.
 
 Verify the database import by logging back into MariaDB:
 
