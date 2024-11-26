@@ -1,93 +1,96 @@
-# Spring Boot Backend Deployment Guide
+# MariaDB Setup and Configuration Guide for Windows
 
-## Part 1: Deploying Locally
+This guide explains how to set up MariaDB, create a database, and import data from a SQL file on a Windows system.
 
-Prerequisites :
-Java Development Kit (JDK 8 or higher) installed.
-Maven installed.
-Spring Boot application source code or JAR file.
+## 1. Installing MariaDB
 
-Step 1: Install Java
+Download and Install MariaDB
+Visit the MariaDB download page.
+Select the appropriate version for Windows and download the installer.
+Run the installer and follow the prompts. Choose the default options unless you need custom configurations.
+Start MariaDB Service
+After installation, the MariaDB service should be running automatically. To verify, follow these steps:
 
-Verify if Java is installed:
+Open the Command Prompt as an Administrator.
+Type the following command to check if the MariaDB service is running:
 
 ```bash
-
-java -version
+net start MariaDB
 
 ```
 
-If Java is not installed, download and install the JDK from Oracle or use a package manager:
+If the service is not running, you can start it using:
 
 ```bash
 
-sudo apt update
-sudo apt install openjdk-11-jdk -y
-```
-
-Verify installation:
-
-```bash
-java -version
+net start MariaDB
 
 ```
 
-Step 2: Install Maven
+## 2. Securing MariaDB
 
-Verify if Maven is installed:
+Open the Command Prompt as Administrator and run the following command to secure your installation:
 
 ```bash
-mvn -version
 
+mysql_secure_installation
 ```
 
-If not installed, use the following command:
+Follow the prompts to:
+Set a root password.
+Remove insecure default users and test databases.
+Disable remote root login.
+
+## 3. Setting Up the Database
+
+Open Command Prompt as Administrator and login to MariaDB:
 
 ```bash
-sudo apt install maven -y
 
+mysql -u root -p
 ```
 
-Step 3: Build the Spring Boot Application
+Enter the root password when prompted.
 
-Navigate to your Spring Boot project directory:
+Create a new database and user:
 
-```bash
+```sql
 
-cd /path/to/your/project
+CREATE DATABASE springbackend;
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
+Replace username and your_password with your desired username and password.
 ```
 
-Build the project:
+Exit MariaDB:
 
-```bash
-mvn clean package -Dmaven.test.skip=true
+```sql
 
+EXIT;
 ```
 
-After a successful build, the JAR file will be located in the target/ directory (e.g., target/spring-backend-v1.jar).
+## 4. Importing the Database
 
-Step 4: Run the Application
-
-Run the JAR file:
+To import an SQL file into your new database, use the following command: Open Command Prompt as Administrator and run:
 
 ```bash
 
-java -jar target/spring-backend-v1.jar
-
+mysql -u username -p springbackend < C:\path\to\springbackend.sql
+Replace C:\path\to\springbackend.sql with the actual path to your SQL file.
 ```
 
-The application will start, and you can access it at:
-
-arduino
-
-http://localhost:8080
-
-Step 5: Keep the Application Running
-
-If you want to keep the application running in the background:
+Verify the database import by logging back into MariaDB:
 
 ```bash
 
-nohup java -jar target/spring-backend-v1.jar &
+mysql -u username -p
+```
 
+Run the following commands to check if the database and tables have been created correctly:
+
+```sql
+
+SHOW DATABASES;
+USE springbackend;
+SHOW TABLES;
+SELECT * FROM tbl_workers;
 ```
