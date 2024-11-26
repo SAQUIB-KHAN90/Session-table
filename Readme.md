@@ -1,102 +1,70 @@
-# MariaDB Setup and Configuration Guide for Windows
+# React Project Setup and Deployment Guide for Windows
 
-This guide explains how to set up MariaDB, create a database, and import data from a SQL file on a Windows system.
+This guide provides step-by-step instructions for setting up a React project locally on a Windows system.
 
-## 1. Installing MariaDB
+## 1. Setting Up the React Project Locally
 
-Download and Install MariaDB
+### Install Node.js and npm
 
-Visit the MariaDB download page.
+1. Download the latest version of [Node.js](https://nodejs.org/) for Windows. The installer includes both `node` and `npm`.
+2. Run the installer and follow the instructions.
 
-Select the appropriate version for Windows and download the installer.
+### Verify Installation
 
-Run the installer and follow the prompts. Choose the default options unless you need custom configurations.
-
-Start MariaDB Service
-
-After installation, the MariaDB service should be running automatically. To verify, follow these steps:
-
-Open the Command Prompt as an Administrator.
-Type the following command to check if the MariaDB service is running:
+After installation, open **Command Prompt** and verify that Node.js and npm are installed correctly by running:
 
 ```bash
-net start MariaDB
-
+node -v
+npm -v
 ```
 
-If the service is not running, you can start it using:
+## 2. Create a React Application
+
+Use npx (which is bundled with npm) to create a new React app:
 
 ```bash
 
-net start MariaDB
-
+npx create-react-app react-frontend
 ```
 
-## 2. Securing MariaDB
+This will create a new directory called react-frontend and set up a new React project in it.
 
-Open the Command Prompt as Administrator and run the following command to secure your installation:
+Navigate to the Project Directory
+
+After the project is created, navigate to the project directory:
+
+```bash
+cd react-frontend
+```
+
+## 3. Run the React Application Locally
+
+Install Dependencies
+
+To install the necessary dependencies for your project, run the following command:
 
 ```bash
 
-mysql_secure_installation
+npm install
 ```
 
-Follow the prompts to:
-Set a root password.
-Remove insecure default users and test databases.
-Disable remote root login.
+Start the Development Server
 
-## 3. Setting Up the Database
-
-Open Command Prompt as Administrator and login to MariaDB:
+To start the development server and run the React application locally, use:
 
 ```bash
 
-mysql -u root -p
+npm start
 ```
 
-Enter the root password when prompted.
+This will start the application on http://localhost:3000, and you can view it in your browser.
 
-Create a new database and user:
+## 4. Build the React Application for Production
 
-```sql
-
-CREATE DATABASE springbackend;
-GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
-Replace username and your_password with your desired username and password.
-```
-
-Exit MariaDB:
-
-```sql
-
-EXIT;
-```
-
-## 4. Importing the Database
-
-To import an SQL file into your new database, use the following command: Open Command Prompt as Administrator and run:
+To build the React application for production, run:
 
 ```bash
-
-mysql -u username -p springbackend < C:\path\to\springbackend.sql
+npm run build
 ```
 
-Replace C:\path\to\springbackend.sql with the actual path to your SQL file.
-
-Verify the database import by logging back into MariaDB:
-
-```bash
-
-mysql -u username -p
-```
-
-Run the following commands to check if the database and tables have been created correctly:
-
-```sql
-
-SHOW DATABASES;
-USE springbackend;
-SHOW TABLES;
-SELECT * FROM tbl_workers;
-```
+This will create a build/ directory in your project containing optimized, production-ready files.
