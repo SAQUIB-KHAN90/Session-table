@@ -1,70 +1,107 @@
-# React Project Setup and Deployment Guide for Windows
+# Spring Boot Backend Deployment Guide for Windows
 
-This guide provides step-by-step instructions for setting up a React project locally on a Windows system.
+## Part 1: Deploying Locally
 
-## 1. Setting Up the React Project Locally
+### Prerequisites
 
-### Install Node.js and npm
+- Java Development Kit (JDK 8 or higher) installed.
+- Maven installed.
+- Spring Boot application source code or JAR file.
 
-1. Download the latest version of [Node.js](https://nodejs.org/) for Windows. The installer includes both `node` and `npm`.
-2. Run the installer and follow the instructions.
+### Step 1: Install Java
 
-### Verify Installation
+1. Verify if Java is installed by running the following command in **Command Prompt**:
 
-After installation, open **Command Prompt** and verify that Node.js and npm are installed correctly by running:
+   ```bash
+   java -version
+   ```
 
-```bash
-node -v
-npm -v
-```
+If Java is not installed, download and install the JDK from Oracle JDK Downloads or OpenJDK.
 
-## 2. Create a React Application
-
-Use npx (which is bundled with npm) to create a new React app:
+After installing Java, verify the installation again:
 
 ```bash
 
-npx create-react-app react-frontend
+java -version
 ```
 
-This will create a new directory called react-frontend and set up a new React project in it.
+## Step 2: Install Maven
 
-Navigate to the Project Directory
-
-After the project is created, navigate to the project directory:
-
-```bash
-cd react-frontend
-```
-
-## 3. Run the React Application Locally
-
-Install Dependencies
-
-To install the necessary dependencies for your project, run the following command:
+Verify if Maven is installed by running the following command in Command Prompt:
 
 ```bash
 
-npm install
+mvn -version
 ```
 
-Start the Development Server
+If Maven is not installed, follow these steps:
 
-To start the development server and run the React application locally, use:
+Download Maven from the official Maven website.
+
+Extract the archive to a directory of your choice (e.g., C:\Program Files\Apache\maven).
+
+Set the MAVEN_HOME environment variable and add the bin directory to the PATH environment variable.
+
+Example for setting environment variables:
+
+Right-click on This PC and select Properties.
+
+Click Advanced system settings and then Environment Variables.
+
+Under System Variables, click New and add:
+
+MAVEN_HOME = C:\Program Files\Apache\maven
+
+Edit Path and add: C:\Program Files\Apache\maven\bin.
+
+## Verify Maven installation:
 
 ```bash
 
-npm start
+mvn -version
 ```
 
-This will start the application on http://localhost:3000, and you can view it in your browser.
+## Step 3: Build the Spring Boot Application
 
-## 4. Build the React Application for Production
-
-To build the React application for production, run:
+Open Command Prompt and navigate to your Spring Boot project directory:
 
 ```bash
-npm run build
+
+cd C:\path\to\your\project
 ```
 
-This will create a build/ directory in your project containing optimized, production-ready files.
+Build the project using Maven:
+
+```bash
+
+mvn clean package -Dmaven.test.skip=true
+```
+
+After a successful build, the JAR file will be located in the target/ directory (e.g., target\spring-backend-v1.jar).
+
+## Step 4: Run the Application
+
+Run the generated JAR file by using the following command:
+
+```bash
+
+java -jar target\spring-backend-v1.jar
+```
+
+The application will start and be accessible at:
+
+http://localhost:8080
+
+### Step 5: Keep the Application Running
+
+To keep the application running in the background, you can use nohup or a similar method. However, Windows does not have a native nohup command. Instead, you can use PowerShell to run the process in the background.
+
+To run the JAR file in the background using PowerShell:
+
+```powershell
+
+Start-Process java -ArgumentList '-jar', 'C:\path\to\your\project\target\spring-backend-v1.jar'
+
+```
+
+This will keep the application running even if you close the PowerShell window.
